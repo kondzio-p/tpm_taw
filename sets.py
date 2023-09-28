@@ -28,3 +28,19 @@ print(roznica)
 
 roznica2=b.difference(b)
 print(roznica2)
+
+if 3 in b:
+    b.remove(3)
+
+if 3 in b:
+    b.remove(3)
+
+    lista1=[2,4,5,6,9]
+    if 1 in lista1:
+        print("Jest")
+    else:
+        print("Nie ma")
+
+listaX={2, 3, 4, 2, 3, 4, 2, 3, 4}
+listaX=list(set(listaX))
+print(listaX)
