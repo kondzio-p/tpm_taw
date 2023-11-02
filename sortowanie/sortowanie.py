@@ -37,10 +37,24 @@ def insertsort(numbers):
             j -= 1
     return numbers
 #selection sort (Barłomiej Labenz) 
-def selectionsort():
-    pass
+def selectionsort(numbers):
+    for i in range(len(numbers)):
+        min_i = i
+    for j in range(i, len(numbers)):
+        if numbers[min_i] > numbers[j]:
+            min_i = j
+    numbers[min_i], numbers[i] = numbers[i], numbers[min_i]
+    print(numbers, "\n")
+    return numbers
 #quicksort (Damian Kwasigroch)
-def quicksort():
+def quicksort(numbers):
+    if len(quicksort) <= 1:
+        return arr
+    else:
+        pivot = numbers[0]
+        left = [i for i in arr[1:] if i < pivot]
+        right = [i for i in arr[1:] if i >= pivot]
+        return quicksort(left) + [pivot] +quicksort(right)
     pass
 #pobieranie danych do generatora
 def pobierz():
